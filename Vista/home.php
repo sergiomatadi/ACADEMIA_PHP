@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<h1>PRUEBA</h1>
+<?php include("cabecera.php");?>
 
+<div class="container">
+    <div class="col-md-8 offset-md-2">
+        
+        <div id='calendar'></div>
 
-</body>
-</html>
+    </div>
+
+</div>
+
+<script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale: 'es',
+          headerToolbar:{
+              left:'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth, timeGridWeek, timeGridDay'
+          }
+        });
+        calendar.render();
+      });
+
+    </script>
+<?php include("pie.php");?>
