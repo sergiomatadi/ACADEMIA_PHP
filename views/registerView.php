@@ -13,7 +13,7 @@
   <div class="container d-flex justify-content-center align-items-center h-100">
     <section class="login d-flex flex-column justify-content-center align-items-center rounded-3 bg-white w-50 P-5">
       <div class="d-flex w-100 justify-content-start pb-3">
-        <a href="../Controlador/login.php" class="text-dark">
+        <a href="../controllers/loginController.php" class="text-dark">
           <button type="button" class="button-back btn btn-sm btn-outline-secondary">
             VOLVER
           </button>
@@ -43,7 +43,7 @@
             <input type="password" class="form-control" placeholder="********" id="inputPassword3" required>
           </div>
         </div>
-        <a href="../Controlador/home.php" class="text-decoration-none">
+        <a href="../controllers/homeController.php" class="text-decoration-none">
             <button type="button" class="btn btn-primary" id="botonregistro">
             REGISTRAME
             </button>

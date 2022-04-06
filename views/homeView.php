@@ -1,4 +1,4 @@
-<?php include("cabecera.php");?>
+<?php include("headerView.php");?>
 
 <div class="container">
     <div class="col-md-8 offset-md-2">
@@ -26,4 +26,4 @@
       });
 
     </script>
-<?php include("pie.php");?>
+<?php include("footerView.php");?>

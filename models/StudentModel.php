@@ -1,7 +1,7 @@
 <?php
 
 
-class Alumno{
+class Student{
 
     private $dni;
 
