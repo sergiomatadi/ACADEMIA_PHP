@@ -1,6 +1,7 @@
 <?php include("cabecera.php");?>
 
-<div class="container">
+
+<div class="container mt-5">
     <div class="col-md-8 offset-md-2">
         
         <div id='calendar'></div>
@@ -25,5 +26,6 @@
         calendar.render();
       });
 
-    </script>
+   </script>
+   
 <?php include("pie.php");?>
