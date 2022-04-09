@@ -1,4 +1,4 @@
-<?php include("cabecera.php");?>
+<?php include("headerView.php");?>
 
 
 <div class="container mt-5">
@@ -26,6 +26,5 @@
         calendar.render();
       });
 
-   </script>
-   
-<?php include("pie.php");?>
+    </script>
+<?php include("footerView.php");?>

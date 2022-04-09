@@ -1,3 +1,3 @@
 <?php
-require_once ("Controlador/welcome.php");
+require_once ("controllers/welcomeController.php");
 ?>

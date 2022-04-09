@@ -36,12 +36,12 @@
             <input type="password" class="form-control" id="inputPasswordLogin" />
           </div>
         </div>
-        <a href="../Controlador/home.php" class="text-decoration-none">
+        <a href="../controllers/homeController.php" class="text-decoration-none">
           <button type="button" class="d-inline-flex justify-content-center btn btn-primary" id="loginButton">
             ENTRAR
           </button>
         </a>
-        <a href="../Controlador/register.php" class="text-decoration-none">
+        <a href="../controllers/registerController.php" class="text-decoration-none">
           <button type="button" class="d-inline-flex justify-content-center btn btn-secondary" id="registerButton">
             REGISTRATE
           </button>

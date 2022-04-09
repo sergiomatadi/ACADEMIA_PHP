@@ -24,7 +24,7 @@
       </div>
 
       <form class="w-center">
-        <a href="Controlador/login.php" class="text-decoration-none">
+        <a href="controllers/loginController.php" class="text-decoration-none">
             <button type="button" class="d-flex justify-content-center btn btn-primary" id="loginButton">ENTRAR</button>
         </a>
       </form>
