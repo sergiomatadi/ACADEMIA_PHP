@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7b21262-d55a-4cb5-824e-efda0d8ceaad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Controlador/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/homeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/loginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/registerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/welcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/AlumnoDAO.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/StudentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/views/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/cabecera.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/headerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/homeView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/loginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/pie.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/registerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/validar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/validateView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/welcomeView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrador/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrador/guarda.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/guarda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27DBlADd45aCxR1cgyEPD2g0xMP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7b21262-d55a-4cb5-824e-efda0d8ceaad" name="Changes" comment="" />
+      <created>1648844924975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648844924975</updated>
+      <workItem from="1648844927282" duration="3015000" />
+      <workItem from="1648851649790" duration="5602000" />
+      <workItem from="1649191776643" duration="2361000" />
+      <workItem from="1649269679958" duration="58000" />
+      <workItem from="1649269739376" duration="2140000" />
+      <workItem from="1649271889433" duration="35000" />
+      <workItem from="1649272013748" duration="1457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
