@@ -1,0 +1,19 @@
+body{
+    background-color: #073642;
+    color: black;
+}
+h1{
+    background-color: black;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.encabezado{
+    background-color: white;
+    color: black;
+    align-items: center;
+}
