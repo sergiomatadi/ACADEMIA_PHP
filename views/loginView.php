@@ -1,62 +1,3 @@
-<?php
-  require '../config/config.php';
-
-  if(isset($_POST['login'])) {
-    $errMsg = '';
-
- 
-    $username = $_POST['username'];
-    
-    $password = MD5($_POST['password']);
-
-    if($username == '')
-      $errMsg = 'Ursename';
-    if($clave == '')
-      $errMsg = 'Password';
-
-    if($errMsg == '') {
-      try {
-$stmt = $connect->prepare('SELECT email, id_user_admin, name, password, username FROM users_admin WHERE username = :username SELECT email, id_teacher, name, nif, surname, telephone FROM teachers WHERE email = :email');
-
-
-        $stmt->execute(array(
-          ':username' => $username
-          
-          
-          ));
-        $data = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if($data == false){
-          $errMsg = "User $username not found.";
-        }
-        else {
-          if($password == $data['password']) {
-
-            $_SESSION['email'] = $data['email'];
-            $_SESSION['id_user_admin'] = $data['id_user_admin'];
-            $_SESSION['name'] = $data['name'];
-            $_SESSION['password'] = $data['password'];
-            $_SESSION['username'] = $data['username'];
-           
-            
-            
-    if($_SESSION['cargo'] == 1){
-          header('Location: ../controllers/adminCrontroller.php');
-        }else if($_SESSION['cargo'] == 2){
-          header('Location: ../controllers/studentController.php');
-        }
-            exit;
-          }
-          else
-            $errMsg = 'Incorrect password.';
-        }
-      }
-      catch(PDOException $e) {
-        $errMsg = $e->getMessage();
-      }
-    }
-  }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,37 +22,30 @@ $stmt = $connect->prepare('SELECT email, id_user_admin, name, password, username
         </div>
       </div>
 
-      <form class="w-75">
+      <form class="w-75" action="../controllers/loginController.php" method="post">
         <div class="row mb-3">
-          <label for="inputEmail3" class="col-form-label">Usuario</label>
+          <label for="inputEmail3" class="col-form-label">Email</label>
           <div class="col-12">
-            <input type="email" class="form-control" value="<?php if(isset($_POST['usuario'])) echo $_POST['usuario'] ?>" id="inputEmailLogin" />
+            <input type="email" class="form-control" name="inputEmailLogin" id="inputEmailLogin" />
           </div>
         </div>
 
         <div class="row mb-3">
           <label for="inputPassword3" class="col-form-label">Contraseña</label>
           <div class="col-12">
-            <input type="password" class="form-control" value="<?php if(isset($_POST['password'])) echo MD5($_POST['password']) ?>"id="inputPasswordLogin" />
+            <input type="password" class="form-control" name="inputPasswordLogin" id="inputPasswordLogin" />
           </div>
         </div>
-        <a href="../controllers/homeController.php" class="text-decoration-none">
-          <button type="button" class="d-inline-flex justify-content-center btn btn-primary" id="loginButton">
-            ENTRAR
-          </button>
-        </a>
-        <a href="../controllers/registerController.php" class="text-decoration-none">
-          <button type="button" class="d-inline-flex justify-content-center btn btn-secondary" id="registerButton">
-            REGISTRATE
-          </button>
-        </a>
+        <input type="submit" class="d-inline-flex justify-content-center btn btn-primary" name="loginButton" id="loginButton" value="Entrar">
+
+
       </form>
     </section>
   </div>
 
-  
-     
-   
+
+
+
 
 
 </body>
