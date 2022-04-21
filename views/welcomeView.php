@@ -25,18 +25,24 @@
 
       <form class="w-center">
         <a href="controllers/loginController.php" class="text-decoration-none">
-            <button type="button" class="d-flex justify-content-center btn btn-primary" id="loginButton">ENTRAR</button>
+            <button type="button" class="btn btn-primary" id="loginButton">Usuarios</button>
+        </a>
+        <a href="controllers/adminController.php" class="text-decoration-none">
+            <button type="button" class="btn btn-primary" id="loginButton">Admin</button>
+        </a>
+        <a href="controllers/registerController.php" class="text-decoration-none">
+            <button type="button" class="btn btn-primary" id="loginButton">Registro</button>
         </a>
       </form>
-      
+
 
     </section>
   </div>
 
 
-  
 
-        
+
+
 
 
 

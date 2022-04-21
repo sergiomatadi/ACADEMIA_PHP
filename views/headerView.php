@@ -30,7 +30,7 @@
                     <a class="navigation-link" href="">
                         <div class="row">
                             <div class="col-2">
-                                <i class="icon ion-md-apps"></i>                                
+                                <i class="icon ion-md-apps"></i>
                             </div>
                             <div class="col-10">MENU</div>
                         </div>
@@ -40,7 +40,7 @@
                     <a class="navigation-link" href="">
                         <div class="row">
                             <div class="col-2">
-                                <i class="icon ion-md-apps"></i>                                
+                                <i class="icon ion-md-apps"></i>
                             </div>
                             <div class="col-10">MENU1</div>
                         </div>
@@ -50,7 +50,7 @@
                     <a class="navigation-link" href="">
                         <div class="row">
                             <div class="col-2">
-                                <i class="icon ion-md-apps"></i>                                
+                                <i class="icon ion-md-apps"></i>
                             </div>
                             <div class="col-10">MENU2</div>
                         </div>
@@ -62,29 +62,29 @@
                 <p class="teams-title">TEAMS</p>
             </div>
             <ul class="teams-list">
-                <li class="teams-list-item">                    
+                <li class="teams-list-item">
                         <div class="row">
                             <div class="col-1">
-                                <i class="fas fa-circle" style="color:purple;""></i>                                
+                                <i class="fas fa-circle" style="color:purple;"></i>
                             </div>
                             <div class="col-10">Asignatura1</div>
-                        </div>             
+                        </div>
                 </li>
-                <li class="teams-list-item">                    
+                <li class="teams-list-item">
                         <div class="row">
                             <div class="col-1">
-                                <i class="fas fa-circle" style="color:blue;"></i>                                
+                                <i class="fas fa-circle" style="color:blue;"></i>
                             </div>
                             <div class="col-10">Asignatura2</div>
-                        </div>             
+                        </div>
                 </li>
-                <li class="teams-list-item">                    
+                <li class="teams-list-item">
                         <div class="row">
                             <div class="col-1">
-                                <i class="fas fa-circle" style="color:white;"></i>                                
+                                <i class="fas fa-circle" style="color:white;"></i>
                             </div>
                             <div class="col-10">Asignatura3</div>
-                        </div>             
+                        </div>
                 </li>
             </ul>
         </div>
@@ -97,7 +97,7 @@
                         <h2>CodersTeam</h2>
                     </div>
                 </div>
-           
+
                 <button id="sidebarToggle" class="btn sidebarToggle">
                     <i class="icon ion-md-menu" name="menu"> </i>
                 </button>
@@ -105,7 +105,7 @@
                   <form class="d-flex justify-content-end">
                     <input class="form-control my-2 my-sm-0 me-sm-3  " type="text" placeholder="Search">
                       <button class="btn btn-secondary my-2 my-sm-0 me-sm-2  " type="submit">Buscar</button>
-                      <a href="../controllers/loginController.php">
+                      <a href="../index.php">
                         <button class="btn btn-secondary " type="button">Cerrar sesión</button>
                       </a>
                   </form>
@@ -114,8 +114,7 @@
             </div>
         </div>
         <div class="interior">
-          
+
 
         </div>
     </div>
-
