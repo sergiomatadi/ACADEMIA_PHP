@@ -1,14 +1,16 @@
 <?php
 require_once (dirname(__FILE__).'/../views/loginView.php');
+require_once (dirname(__FILE__).'/../administrator/db.php');
+
 if(isset($_POST['loginButton'])){
   $email = $_POST['inputEmailLogin'];
-  $contraseña = $_POST['inputPasswordLogin'];
+  $pass = $_POST['inputPasswordLogin'];
 
-  $con = new mysqli("localhost", "root", "", "wordpress25");
+  $con = Db::getConexion();
   $stmt = $con->prepare("SELECT id, email, pass FROM students WHERE email = ? AND pass = ?");
-  //$stmt = $con->prepare("SELECT * FROM usuarios WHERE nombre = ? AND pass = ?");
-  $stmt->bind_param('ss', $email, $contraseña);
-  $stmt->bind_result($id, $email, $contraseña);
+  
+  $stmt->bind_param('ss', $email, $pass);
+  $stmt->bind_result($id, $email, $pass);
   $stmt->execute();
     if($stmt->fetch()){
       session_start();
@@ -19,10 +21,9 @@ if(isset($_POST['loginButton'])){
     {
       ?>
       <script type="text/javascript">
-        alert("Usuario o contraseña no es correcto");
+        alert("Usuario o contraseña incorrecto");
       </script>
       <?php
-    //echo "<p style='text-align:center'>Usuario o contraseña no es correcto</p>";
     }
 }
 
