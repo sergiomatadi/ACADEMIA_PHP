@@ -105,7 +105,7 @@
                   <form class="d-flex justify-content-end">
                     <input class="form-control my-2 my-sm-0 me-sm-3  " type="text" placeholder="Search">
                       <button class="btn btn-secondary my-2 my-sm-0 me-sm-2  " type="submit">Buscar</button>
-                      <a href="../Controlador/login.php">
+                      <a href="../controllers/loginController.php">
                         <button class="btn btn-secondary " type="button">Cerrar sesión</button>
                       </a>
                   </form>
