@@ -4,7 +4,7 @@ if(isset($_POST['loginButton'])){
   $email = $_POST['inputEmailLogin'];
   $contraseña = $_POST['inputPasswordLogin'];
 
-  $con = new mysqli("localhost", "root", "LvV!aqwC^5Hwgw86lZ", "wordpress25");
+  $con = new mysqli("localhost", "root", "", "wordpress25");
   $stmt = $con->prepare("SELECT id, email, pass FROM students WHERE email = ? AND pass = ?");
   //$stmt = $con->prepare("SELECT * FROM usuarios WHERE nombre = ? AND pass = ?");
   $stmt->bind_param('ss', $email, $contraseña);
