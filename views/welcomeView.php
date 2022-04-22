@@ -25,13 +25,13 @@
 
       <form class="w-center">
         <a href="controllers/loginController.php" class="text-decoration-none">
-            <button type="button" class="btn btn-primary" id="loginButton">Usuarios</button>
-        </a>
-        <a href="controllers/adminController.php" class="text-decoration-none">
-            <button type="button" class="btn btn-primary" id="loginButton">Admin</button>
+            <button type="button" class="btn btn-primary">Entrar</button>
         </a>
         <a href="controllers/registerController.php" class="text-decoration-none">
-            <button type="button" class="btn btn-primary" id="loginButton">Registro</button>
+            <button type="button" class="btn btn-primary">Crear estudiante</button>
+        </a>
+        <a href="controllers/registerAdminController.php" class="text-decoration-none">
+              <button type="button" class="btn btn-primary">Crear administrador</button>
         </a>
       </form>
 
