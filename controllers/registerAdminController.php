@@ -31,6 +31,7 @@ if(isset($_POST['createAdminButton'])){
         alert("Registro correcto, ya puedes iniciar sesion");
     </script>
     <?php
+    header("location:loginController.php");
   }
 }
 ?>
