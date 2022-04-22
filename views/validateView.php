@@ -12,7 +12,7 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-    header("localition:homeController.php");
+    header("location:homeController.php");
     }else{
         ?>
         <?php
