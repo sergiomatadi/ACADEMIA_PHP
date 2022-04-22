@@ -34,8 +34,8 @@
             <td><?php echo $row['date_start'] ?></td>
             <td><?php echo $row['date_end'] ?></td>
             <td><?php echo $row['active'] ?></td>
-            <td> <a href="" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-create"></a></td>
-            <td> <a href="" class="btn btn-secondary"><i class="icon ion-md-trash"></a></td>
+            <td> <a href="" class="btn btn-secondary"><i class="icon ion-md-create"></a></td>
+            <td> <a href="../controllers/deleteTaskCourses.php?id_course=<?php echo $row['id_course']?>" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-trash"></a></td>
         </tr>
         <?php } ?>
     </tbody>
