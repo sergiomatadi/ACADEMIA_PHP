@@ -31,7 +31,7 @@
             <div class="card-body">
                 <h5 class="card-title">Profesores</h5>
                 <p class="card-text">Gestionar Profesores</p>
-                <a href="#" class="btn btn-primary">Crear</a>
+                <a href="../controllers/registerTeacherController.php" class="btn btn-primary">Crear</a>
                 <a href="#" class="btn btn-primary">Modificar</a>
                 <a href="#" class="btn btn-primary">Eliminar</a>
             </div>
