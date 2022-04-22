@@ -6,14 +6,16 @@
 <div class="container mt-5  ">
 <div class="table-responsive">
 <table class="table table-hover">
-  <thead> PROFESORES
+  <thead> ESTUDIANTES
         <tr>
             <th>Id</th>
+            <th>Usuario</th>
+            <th>Email</th>
             <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Empieza</th>
-            <th>Acaba</th>
-            <th>Activo</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Nif</th>
+            <th>Fecha de registro</th>
             <th>Editar</th>
             <th>Eliminar</th>
 

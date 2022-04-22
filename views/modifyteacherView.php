@@ -14,8 +14,8 @@
             <th>Móvil</th>
             <th>Nif</th>
             <th>Email</th>
-            <th>Ciudad</th>
-            <th>Código Postal</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
         </tr>
     </thead>
     <tbody>

@@ -6,7 +6,7 @@
 <div class="container mt-5  ">
 <div class="table-responsive">
 <table class="table table-hover">
-  <thead> PROFESORES
+  <thead> CURSOS
         <tr>
             <th>Id</th>
             <th>Nombre</th>
