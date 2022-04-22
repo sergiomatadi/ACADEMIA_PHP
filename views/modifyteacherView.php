@@ -33,8 +33,9 @@
             <td><?php echo $row['telephone'] ?></td>
             <td><?php echo $row['nif'] ?></td>
             <td><?php echo $row['email'] ?></td>
-            <td> <a href="" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-create"></a></td>
-            <td> <a href="" class="btn btn-secondary"><i class="icon ion-md-trash"></a></td>
+            <td> <a href="" class="btn btn-secondary"><i class="icon ion-md-create"></a></td>
+            <td> <a href="../controllers/deleteTask.php?id_teacher=<?php echo $row['id_teacher']?>" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-trash"></a></td>
+            
         </tr>
         <?php } ?>
     </tbody>

@@ -1,18 +1,12 @@
 <?php
- require_once (dirname(__FILE__).'/../administrator/db.php');
-include ("db.php");
- if (isset($_GET['id_teacher'])) {
-     $id_teacher = $_GET['id_teacher'];
-     $query = "DELETE FROM teacher WHERE id_teacher = $id_teacher";
-     $result = mysqli_query($con, $query);
-     if(!result){
-         die("Query Failed");
-     }
-     header("location:adminController.php");
- }
-
-
+  require_once (dirname(__FILE__).'/../administrator/db.php');
+ 
+        $query = "DELETE FROM teachers WHERE id_teacher = id_teacher";
+        $conexion = new Db();
+        $result_teacher = mysqli_query($conexion->getConexion(), $query);
+        header("location:modifyteacherController.php");
 ?>
+
      <script type="text/javascript">
      alert("Profesor eliminado");
     </script>
