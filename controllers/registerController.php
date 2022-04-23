@@ -20,10 +20,13 @@ if(isset($_POST['loginButton'])){
       $username = $_POST['username'];
       $pass = $_POST['pass'];
       $email = $_POST['email'];
+      $telephone = $_POST['telephone'];
+      $nif = $_POST['nif'];
+      $surname = $_POST['surname'];
       
-      $query = "INSERT INTO students (name, username, pass, email) VALUES (?,?,?,?)";
+      $query = "INSERT INTO students (name, username,surname, pass, email,telephone, nif ) VALUES (?,?,?,?,?,?,?)";
       $stmt = $con->prepare($query);                                                                                                                     //tabla_busqueda WHERE $filtro lIKE ?");
-      $stmt->bind_param('ssss', $name, $username, $pass, $email);
+      $stmt->bind_param('sssssss', $name, $username,$surname, $pass, $email, $telephone, $nif);
       $stmt->execute();
       $stmt->close();
       ?>

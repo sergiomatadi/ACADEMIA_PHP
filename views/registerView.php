@@ -30,6 +30,12 @@
             <input type="text" class="form-control" placeholder="Pepito" aria-label="Name" name="name" id="name" required>
           </div>
         </div>
+        <div class="row mb-3">
+        <label for="surname" class="col-form-label">Surname</label>
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="apellido" aria-label="Surname" name="surname" id="surname" required>
+        </div>
+      </div>
 
         <div class="row mb-3">
           <label for="username" class="col-form-label">Username</label>
@@ -44,6 +50,22 @@
             <input type="email" class="form-control" placeholder="Pepito@correo.com" name="email" id="inputEmail3" required>
           </div>
         </div>
+
+        <div class="row mb-3">
+          <label for="telephone" class="col-form-label">Telephone</label>
+          <div class="col-12">
+            <input type="text" class="form-control" placeholder="666666666" name="telephone" id="inputTelephone" required>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputNif" class="col-form-label">Nif</label>
+          <div class="col-12">
+            <input type="text" class="form-control" placeholder="12345678A" name="nif" id="inputNif" required>
+          </div>
+        </div>
+
+
 
         <div class="row mb-3">
           <label for="pass" class="col-form-label">Contraseña</label>
