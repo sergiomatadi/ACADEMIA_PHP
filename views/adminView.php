@@ -12,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title">Cursos</h5>
                 <p class="card-text">Gestionar cursos</p>
-                <a href="#" class="btn btn-primary">Crear</a>
+                <a href="../controllers/registerCourseController.php" class="btn btn-primary">Crear</a>
                 <a href="modifyCoursesController.php" class="btn btn-primary">Modificar</a>
             </div>
         </div>
