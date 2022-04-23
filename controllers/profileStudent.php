@@ -1,12 +1,21 @@
 <?php
-require_once (dirname(__FILE__).'/../views/profileStudent.php');
 require_once (dirname(__FILE__).'/../administrator/db.php');
 
-if(isset($_POST['loginButton'])){
+session_start();
+$id = $_SESSION['id'];
+$con =  Db::getConexion();
+$query = "SELECT * FROM students WHERE id = '$id'";
+
+if ($result = mysqli_query($con, $query)) {
+  $row = $result->fetch_array(MYSQLI_ASSOC);
+  require_once (dirname(__FILE__).'/../views/profileStudent.php');
+}
+
+if(isset($_POST['updateStudent'])){
     $email = $_POST['email'];
     $con = Db::getConexion();
-    $stmt = $con->prepare("SELECT email FROM students WHERE email = ?");
-    $stmt->bind_param('s', $email);
+    $stmt = $con->prepare("SELECT email FROM students WHERE email = ? AND id != ?");
+    $stmt->bind_param('si', $email, $id);
     $stmt->execute();
     if($stmt->fetch()){
         ?>
@@ -23,18 +32,19 @@ if(isset($_POST['loginButton'])){
       $telephone = $_POST['telephone'];
       $nif = $_POST['nif'];
       $surname = $_POST['surname'];
-      
-      $query = "UPDATE INTO students (name, username,surname, pass, email,telephone, nif ) VALUES (?,?,?,?,?,?,?)";
-      $stmt = $con->prepare($query);                                                                                                                     //tabla_busqueda WHERE $filtro lIKE ?");
-      $stmt->bind_param('sssssss', $name, $username,$surname, $pass, $email, $telephone, $nif);
-      $stmt->execute();
-      $stmt->close();
+  
+      $query = "UPDATE students SET name = ?, username = ?, surname = ?, pass = ?, email = ?, telephone = ?, nif = ? WHERE id = ?";
+      $stmt2 = $con->prepare($query);
+      $stmt2->bind_param('sssssssi', $name, $username, $surname, $pass, $email, $telephone, $nif, $id);
+      $stmt2->execute();
+      $stmt2->close();
+  
       ?>
-      <script type="text/javascript">
-        alert("Registro correcto, ya puedes iniciar sesion");
-      </script>
-  <?php
-      header("location:loginController.php");
-  }
+        <script type="text/javascript">
+            alert("Se ha guardado el estudiante correctamente");
+        </script>
+      <?php
+      header("location:../views/homeView.php");
+    }
 }
 ?>
