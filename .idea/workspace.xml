@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7b21262-d55a-4cb5-824e-efda0d8ceaad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Controlador/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/homeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/registerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/welcomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/AlumnoDAO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelo/Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/StudentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/views/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/cabecera.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/headerView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/homeView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/loginView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/pie.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footerView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/registerView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/validar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/validateView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/welcomeView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrador/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/administrador/guarda.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/guarda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/modifyCourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/registerCourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/updateCourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/modifyCourseView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/registerCourseView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/updateCourseView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/administrator/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/administrator/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/deleteTaskCourses.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/deleteTaskCoursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/deleteTaskStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/deleteTaskStudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/deleteTaskTeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/deleteTaskTeacherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/adminView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/adminView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/footerView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifyCoursesView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifyCoursesView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifyStudentView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifyStudentView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifyteacherView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifyteacherView.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,8 @@
       <workItem from="1649269739376" duration="2140000" />
       <workItem from="1649271889433" duration="35000" />
       <workItem from="1649272013748" duration="1457000" />
+      <workItem from="1650666239259" duration="9287000" />
+      <workItem from="1650712608526" duration="9752000" />
     </task>
     <servers />
   </component>
