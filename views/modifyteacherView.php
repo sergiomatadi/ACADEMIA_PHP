@@ -4,6 +4,13 @@
 ?>
 
 <div class="container mt-5  ">
+    <div class="d-flex w-100 justify-content-start pb-3">
+        <a href="adminController.php" class="text-dark">
+            <button type="button" class="button-back btn btn-sm btn-outline-secondary">
+                VOLVER
+            </button>
+        </a>
+    </div>
 <div class="table-responsive">
 <table class="table table-hover">
   <thead> PROFESORES
@@ -34,7 +41,7 @@
             <td><?php echo $row['nif'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td> <a href="" class="btn btn-secondary"><i class="icon ion-md-create"></a></td>
-            <td> <a href="../controllers/deleteTaskTeacher.php?id_teacher=<?php echo $row['id_teacher']?>" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-trash"></a></td>
+            <td> <a href="../controllers/deleteTaskTeacherController.php?id_teacher=<?php echo $row['id_teacher']?>" class="btn btn-secondary" name="deleteTask" id="deleteTask"><i class="icon ion-md-trash"></a></td>
             
         </tr>
         <?php } ?>
