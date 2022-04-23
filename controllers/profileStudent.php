@@ -1,5 +1,5 @@
 <?php
-require_once (dirname(__FILE__).'/../views/registerView.php');
+require_once (dirname(__FILE__).'/../views/profileStudent.php');
 require_once (dirname(__FILE__).'/../administrator/db.php');
 
 if(isset($_POST['loginButton'])){
@@ -24,7 +24,7 @@ if(isset($_POST['loginButton'])){
       $nif = $_POST['nif'];
       $surname = $_POST['surname'];
       
-      $query = "INSERT INTO students (name, username,surname, pass, email,telephone, nif ) VALUES (?,?,?,?,?,?,?)";
+      $query = "UPDATE INTO students (name, username,surname, pass, email,telephone, nif ) VALUES (?,?,?,?,?,?,?)";
       $stmt = $con->prepare($query);                                                                                                                     //tabla_busqueda WHERE $filtro lIKE ?");
       $stmt->bind_param('sssssss', $name, $username,$surname, $pass, $email, $telephone, $nif);
       $stmt->execute();

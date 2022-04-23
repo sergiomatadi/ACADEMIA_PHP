@@ -7,14 +7,22 @@ include("headerView.php");
 ?>
 
 
-<div class="container mt-5">
+<div class="container mt-5 d-flex">
     <div class="col-md-8 offset-md-2">
 
         <div id='calendar'></div>
 
     </div>
+    <div class="col-md-3 offset-md-2">
+      <a href="../controllers/profileStudent.php">
+        <button class="bg-primary">Perfil <i class="icon ion-md-person"></i></button>
+      </a>
 
-</div>
+    </div>
+
+
+
+
 
 <script>
 
